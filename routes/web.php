@@ -40,6 +40,7 @@ Route::prefix('/devices')->group(function () {
 
 Route::prefix('/queues')->group(function () {
     Route::get('/index', [QueueController::class, 'index'])->name('queues.index');
+    Route::get('/{id}/finish', [QueueController::class, 'finish'])->name('queues.finish');
     Route::get('/{id}/tickets', [TicketController::class, 'index'])->name('tickets.index');
     Route::get('/{id}/tickets/repair', [TicketController::class, 'repair'])->name('tickets.repair');
     Route::get('/{id}/tickets/finish', [TicketController::class, 'finish'])->name('tickets.finish');

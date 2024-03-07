@@ -5,6 +5,15 @@
     <h1 class="text-center my-4">We Repair and Clean It All!</h1>
     <p class="text-center mb-5">Choose your service type to explore our services:</p>
     <div class="row">
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="purple card help-button rounded-4 p-2">
+                <div class="card-body">
+                    <h3 class="card-title">Add New Service</h3>
+                    <p class="card-text">Expand your scope by adding a new service</p>
+                    <a href="{{ route('services.create') }}" class="btn btn-primary">Add New Service</a>
+                </div>
+            </div>
+        </div>
         @foreach ($services as $service)
         <div class="col-md-4 col-sm-6 mb-4">
             <div class="green card help-button rounded-4 p-2">
@@ -15,16 +24,6 @@
             </div>
         </div>
         @endforeach
-        <div class="col-md-4 col-sm-6 mb-4">
-            <div class="green card help-button rounded-4 p-2">
-                <img src="/images/add_phones.jpg" alt="Add phones" class="card-img-top">
-                <div class="card-body">
-                    <h3 class="card-title">Book an appointment</h3>
-                    <p class="card-text">For easier and faster transactions</p>
-                    <a href="/queue/create/{{ $service->device_id }}" class="btn btn-primary">Click here</a>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 @endsection

@@ -22,7 +22,7 @@
                     <h3 class="card-title">{{ $type->device_type }}</h3>
                     <p class="card-text">Expert repairs for all major brands and models.</p>
                     <a href="/devices/{{ $type->device_id }}/edit" class="btn btn-primary">Edit {{ $type->device_type }}</a>
-                    <a href="/services/{{ $type->device_id }}" class="btn btn-primary">Delete {{ $type->device_type }}</a>
+                    <a href="/devices/{{ $type->device_id }}/delete" class="btn btn-primary">Delete {{ $type->device_type }}</a>
                 </div>
             </div>
         </div>
