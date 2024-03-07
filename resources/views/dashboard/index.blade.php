@@ -35,9 +35,9 @@
         <div class="col-md-4 col-sm-6 mb-4">
             <div class="blue card help-button rounded-4 p-2">
                 <div class="card-body">
-                    <h3 class="card-title">Manage Supplies</h3>
-                    <p class="card-text">Manage supplies with CRUD operations</p>
-                    <a href="/supplies/index" class="btn btn-primary">Manage Supplies</a>
+                    <h3 class="card-title">Manage stocks</h3>
+                    <p class="card-text">CRUD stocks</p>
+                    <a href="/stock-suppliers" class="btn btn-primary">Click here</a>
                 </div>
             </div>
         </div>
@@ -46,7 +46,7 @@
                 <div class="card-body">
                     <h3 class="card-title">Manage Suppliers</h3>
                     <p class="card-text">Manage suppliers with CRUD operations</p>
-                    <a href="/suppliers/index" class="btn btn-primary">Manage Suppliers</a>
+                    <a href="/supplier" class="btn btn-primary">Click here</a>
                 </div>
             </div>
         </div>
