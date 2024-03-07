@@ -9,8 +9,6 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TicketController;
 use Illuminate\Support\Facades\Route;
 
-//hello
-//hello
 /*
 |--------------------------------------------------------------------------
 | Web Routes
