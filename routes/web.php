@@ -6,6 +6,7 @@ use App\Http\Controllers\SmartphoneController;
 use App\Http\Controllers\DeviceserviceController;
 use App\Http\Controllers\QueueController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\TicketController;
 use Illuminate\Support\Facades\Route;
 
@@ -42,10 +43,6 @@ Route::prefix('/queues')->group(function () {
     Route::get('/{id}/tickets', [TicketController::class, 'index'])->name('tickets.index');
     Route::get('/{id}/tickets/repair', [TicketController::class, 'repair'])->name('tickets.repair');
     Route::get('/{id}/tickets/finish', [TicketController::class, 'finish'])->name('tickets.finish');
-
-    Route::post('/store', [DeviceController::class, 'store'])->name('devices.store');
-    Route::get('/{id}/edit', [DeviceController::class, 'edit'])->name('devices.edit');
-    Route::put('/{id}/update', [DeviceController::class, 'update'])->name('devices.update');
 });
 
 
